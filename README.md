@@ -38,8 +38,8 @@ bsh *back slash*\
 #### Dispcmd()
 `dispcmd(cmd)` *Sends a command to the screen*\
 ##### Available Commands:
-clr *clears the screen*
-rtn *returns cursor to the beginning of the line*\
+clr *clears the screen*\
+rtn *returns cursor to the beginning of the line*
 
 #### Lcd_init()
 `lcd_init()` *Initializes the display*
