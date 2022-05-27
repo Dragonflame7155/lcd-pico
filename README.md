@@ -13,7 +13,7 @@ Now you can import the driver with `import lcd` and prefixing commands with `lcd
 
 ### Documentation
 #### Write()
-`write(message)` *Writes a string to the display, doesnt support spaces (for now)*
+`write(message)` *Writes a string to the display only a-z, A-Z, 0-9, and spaces are supported (for now)*
 
 #### Dispchar()
 `dispchar(char)` *Puts a single char on the screen, for use with the builtin variables containing the bits, not a character in the form of a string*
