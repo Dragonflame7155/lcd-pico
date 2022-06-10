@@ -210,7 +210,7 @@ def dispcmd(i):
     enter.value(1)
     sleep(.001)
     enter.value(0)
-    
+
 def clear():
     rs.value(0)
     rw.value(0)
@@ -225,7 +225,7 @@ def clear():
     enter.value(1)
     sleep(.001)
     enter.value(0)
-    
+
 def write(message):
     charlist = list(message)
     for i in charlist:
@@ -233,5 +233,11 @@ def write(message):
             i = "n" + i
         if i in [" "]:
             i = "spc"
+        if i == "=":
+            i = "eql"
+        if i == ".":
+            i = "prd"
+        if i == "?":
+            i = "qst"
         dispchar(globals()[i])
-  
+

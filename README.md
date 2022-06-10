@@ -9,15 +9,28 @@ First clone the repository:
 Then, save the file "lcd-pico.py" as "lcd.py" to your raspberry pi pico
 ![](Screenshot_20220527_162834.png)
 
+###Setup
+Connect Pins 0-11 on your raspberry pi pico to your 16 pin lcd display as follows:\
+Pin 0 -> RS\
+Pin 1 -> RW\
+Pin 2 -> E\
+Pin 3 -> D0\
+Pin 4 -> D1\
+Pin 5 -> D2\
+Pin 6 -> D3\
+Pin 7 -> D4\
+Pin 8 -> D5\
+Pin 9 -> D6\
+Pin 10 -> D7\
 Now you can import the driver with `import lcd` and prefixing commands with `lcd.`
 
 ### Documentation
 #### Write()
-`write(message)` *Writes a string to the display only a-z, A-Z, 0-9, and spaces are supported (for now)*
+`write(message)` *Writes a string to the display only a-z, A-Z, 0-9, =, ., ?, and spaces are supported (for now)*
 
 #### Dispchar()
 `dispchar(char)` *Puts a single char on the screen, for use with the builtin variables containing the bits, not a character in the form of a string*
-##### Available values (any without a description will be displayed as the variable name)
+##### Available values  for `char`(any without a description will be displayed as the variable name)
 a-z\
 A-Z\
 n0-n9 *numbers 0-9*\
