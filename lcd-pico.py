@@ -231,5 +231,7 @@ def write(message):
     for i in charlist:
         if i in ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]:
             i = "n" + i
+        if i in [" "]:
+            i = "spc"
         dispchar(globals()[i])
   
