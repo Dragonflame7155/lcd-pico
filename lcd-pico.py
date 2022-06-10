@@ -239,5 +239,20 @@ def write(message):
             i = "prd"
         if i == "?":
             i = "qst"
+        if i == '"':
+            i = "qot"
+        if i == "(":
+            i = "fbr"
+        if i == ")":
+            i = "bbr"
+        if i == "[":
+            i = "fsb"
+        if i == "]":
+            i = "bsb"
+        if i == "{":
+            i = "fcb"
+        if i == "}":
+            i = "bcb"
         dispchar(globals()[i])
+
 

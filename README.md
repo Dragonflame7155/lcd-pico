@@ -22,12 +22,12 @@ Pin 7 -> D4\
 Pin 8 -> D5\
 Pin 9 -> D6\
 Pin 10 -> D7\
-(And remember to connect VDD and A to 5 volts, and VSS and K to ground. connect 5 volts and ground to a potentiometer, and push to output to VO (for contrast control))
+(And remember to connect VDD and A to 5 volts, and VSS and K to ground. connect 5 volts and ground to a potentiometer, and push to output to VO (for contrast control))\
 Now you can import the driver with `import lcd` and prefixing commands with `lcd.`
 
 ### Documentation
 #### Write()
-`write(message)` *Writes a string to the display only a-z, A-Z, 0-9, =, ., ?, and spaces are supported (for now)*
+`write(message)` *Writes a string to the display only a-z, A-Z, 0-9, =, ., ?, ([{}]), and spaces are supported (for now)*
 
 #### Dispchar()
 `dispchar(char)` *Puts a single char on the screen, for use with the builtin variables containing the bits, not a character in the form of a string*
