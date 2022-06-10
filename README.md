@@ -22,6 +22,7 @@ Pin 7 -> D4\
 Pin 8 -> D5\
 Pin 9 -> D6\
 Pin 10 -> D7\
+(And remember to connect VDD and A to 5 volts, and VSS and K to ground. connect 5 volts and ground to a potentiometer, and push to output to VO (for contrast control))
 Now you can import the driver with `import lcd` and prefixing commands with `lcd.`
 
 ### Documentation
