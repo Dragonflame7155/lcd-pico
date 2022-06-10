@@ -9,7 +9,7 @@ First clone the repository:
 Then, save the file "lcd-pico.py" as "lcd.py" to your raspberry pi pico
 ![](Screenshot_20220527_162834.png)
 
-###Setup
+### Setup
 Connect Pins 0-11 on your raspberry pi pico to your 16 pin lcd display as follows:\
 Pin 0 -> RS\
 Pin 1 -> RW\
