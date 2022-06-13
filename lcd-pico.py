@@ -178,21 +178,13 @@ def lcd_init():
 def  dispchar(i):
     rs.value(1)
     b0.value(i[0])
-    sleep(.0001)
     b1.value(i[1])
-    sleep(.0001)
     b2.value(i[2])
-    sleep(.0001)
     b3.value(i[3])
-    sleep(.0001)
     b4.value(i[4])
-    sleep(.0001)
     b5.value(i[5])
-    sleep(.0001)
     b6.value(i[6])
-    sleep(.0001)
     b7.value(i[7])
-    sleep(.0001)
     enter.value(1)
     sleep(.001)
     enter.value(0)
@@ -253,6 +245,10 @@ def write(message):
             i = "fcb"
         if i == "}":
             i = "bcb"
+        if i == "#":
+            i = "htg"
+        if i == "$":
+            i = "dlr"
         dispchar(globals()[i])
 
 
